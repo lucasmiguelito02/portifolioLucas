@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box ;
+}
+
+:root{
+    --color-white:#fff;
+    --color-purple:#41035c;
+    --color-black:#000;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+#person{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #de2525;
+
+}
+
+.person-content{
+    height:100%;
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    background-color: var(--color-black);
+}
+
+.person-content div h1{
+
+    color: transparent;
+    padding: 0px 10px;
+
+    font-size: 4.5rem;
+    line-height: 6rem;
+
+    animation: written_text .5s ease forwards;
+}
+
+.person-content div h1:nth-child(2){
+    animation-delay: .3s;
+}
+
+.person-content div h1:nth-child(3){
+    animation: written_text_name .5s ease forwards;
+    animation-delay: .8s;
+
+}
+
+
+
+@keyframes written_text {
+    100%{
+        color: var(--color-white);
+    }
+}
+
+@keyframes written_text_name {
+    100%{
+        color: var(--color-purple);
+    }
+}
